@@ -10,7 +10,6 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 # Install system dependencies for pandas and other scientific libs
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
-    libatlas-base-dev \
     gfortran \
     && rm -rf /var/lib/apt/lists/*
 
