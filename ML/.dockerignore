@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+.env
+.env.local
+.env.*.local
+node_modules/
+dist/
+build/
+practice.ipynb
+guide.ipynb
+ai_feedback.ipynb
+# Make sure these ML files are NOT ignored
+# *.pkl  # Don't uncomment this - we WANT pkl files
+# *.joblib  # Don't uncomment this - we WANT joblib files
+# *.h5  # Don't uncomment this - we WANT model files
