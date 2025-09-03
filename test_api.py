@@ -2,7 +2,7 @@ import requests
 import json
 
 # API endpoint
-BASE_URL = "http://localhost:8000"
+BASE_URL = "https://stingray-app-rpi8b.ondigitalocean.app/"
 
 def test_health_check():
     """Test the health check endpoint"""
