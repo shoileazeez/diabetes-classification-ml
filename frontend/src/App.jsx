@@ -3,15 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import  {Routes, Route, BrowserRouter} from "react-router-dom";
-import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage"
+import Predict from "./pages/Predict";
+import HomePage from "./pages/HomePage";
+import { Toaster } from "react-hot-toast";
+
 function App() {
 
   return (
     <BrowserRouter>
+      <Toaster position="top-right" />
       <Routes>
-        <Route path="/" element={<Footer/>}/>
-        <Route path="home" element={<HomePage/>}/>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/predict" element={<Predict/>}/>
       </Routes>
     </BrowserRouter>
   )

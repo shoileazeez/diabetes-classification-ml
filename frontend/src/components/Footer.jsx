@@ -3,12 +3,12 @@ import react from "react";
 
 const Footer = () => {
     return (
-        <div className=" container bg-white py-12 px-4">
+        <div className="bg-gray-50 py-12 px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8  max-w-6xl mx-auto">
                 <div className="space-y-4">
-                    <h3 className="bg-white font-semibold text-black text-sm mb-3">DiabetesAI Predictor</h3>
-                    <p className="bg-white text-gray-500 text-base">Machine learning powered diabetes risk assessment tool using evidence-based health indicators.</p>
-                    <div className="flex  flex-wrap bg-white gap-2 space-y-2 font-medium">
+                    <h3 className="font-semibold text-black text-sm mb-3">DiabetesAI Predictor</h3>
+                    <p className="text-gray-500 text-base">Machine learning powered diabetes risk assessment tool using evidence-based health indicators.</p>
+                    <div className="flex  flex-wrap gap-2 space-y-2 font-medium">
                         <span className="text-black text-sm ">AI/ML</span>
                         <span className="text-black text-sm">HealthCare</span>
                         <span className="text-black text-sm">Opensource</span>
@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
                 {/* Project data source */}
                 <div className="space-y-4 ">
-                    <h4 className="bg-white font-semibold text-black text-sm">Resources</h4>
+                    <h4 className=" font-semibold text-black text-sm">Resources</h4>
                     <div>
                         <ul className="space-y-2 text-sm">
                             <li>
@@ -54,13 +54,13 @@ const Footer = () => {
                 </div>
                 {/* Stack */}
                 <div className="space-y-4">
-                    <h4 className="bg-white font-semibold text-black text-sm">Technical Stack</h4>
+                    <h4 className=" font-semibold text-black text-sm">Technical Stack</h4>
                     <div>
                         <ul className="space-y-2 text-sm text-gray-500 ">
                             <li>• Machine Learning Model</li>
                             <li>• FastAPI Backend</li>
                             <li>• React frontend</li>
-                            <li>• Tailwind Css</li>
+                            <li>• Tailwind CSS</li>
                             <li>• Pima Indian Diabetes Dataset</li>
                         </ul>
                     </div>

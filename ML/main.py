@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 import joblib
 import pandas as pd
@@ -25,6 +26,21 @@ app = FastAPI(
     title="Diabetes Prediction API",
     description="Machine Learning API for predicting diabetes risk based on patient health metrics",
     version="1.0.0"
+)
+
+origins = [
+    "http://localhost:5173",  # Vite default React dev server
+    "http://127.0.0.1:5173",
+    "http://localhost:3000",  # CRA dev server (if using create-react-app)
+    "https://your-frontend-domain.com",  # Production frontend
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,        # Allowed domains
+    allow_credentials=True,
+    allow_methods=["*"],          # Allow all HTTP methods (POST, GET, etc.)
+    allow_headers=["*"],          # Allow all headers
 )
 
 # Load the trained model (now that custom function is defined)

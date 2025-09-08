@@ -1,7 +1,10 @@
-import React from "react"
-import Footer from "../components/Footer"
-import Logo from "../assets/Logo"
-import { Link } from "react-router-dom"
+import React from "react";
+import HowItWorks from "../components/HowItWorks";
+import Footer from "../components/Footer";
+import Logo from "../assets/Logo";
+import { Link } from "react-router-dom";
+import Features from "../components/Features";
+import CTA from "../components/CTA";
 
 
 const HomePage = () => {
@@ -12,14 +15,14 @@ const HomePage = () => {
                     <Logo />
                     <h1 className="text-4xl font-bold">DiabetesAI Predictor</h1>
                 </div>
-                <p className="text-xl text-center max-w-2xl mx-auto mb-6">
+                <p className="text-gray-500 text-xl text-center max-w-2xl mx-auto mb-6">
                     Advanced machine learning technology to assess diabetes risk based on key health indicators
                 </p>
 
                 <div className="flex justify-center gap-7 mb-6">
-                    <span className="text-md">Machine Learning</span>
-                    <span className="text-md">Data-Driven</span>
-                    <span className="text-md">Health Analytics</span>
+                    <span className="text-xs font-medium">Machine Learning</span>
+                    <span className="text-xs font-medium">Data-Driven</span>
+                    <span className="text-xs font-medium">Health Analytics</span>
                 </div>
                 <div className="flex justify-center items-center">
                     <Link
@@ -30,10 +33,19 @@ const HomePage = () => {
                         Start Prediction
                     </Link>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8  max-w-6xl mx-aut">
-                    <h4 className="font-black text-sm">AI-Powered Analysis</h4>
-                    <p className="text-gray-500">Our machine learning model analyzes multiple health parameters to provide accurate diabetes risk assessment.</p>
+                {/* Features section */}
+                <div className="mt-12 mb-12">
+                    <Features/>
                 </div>
+                <div>
+                    <HowItWorks/>
+                </div>
+                <div className="flex items-center justify-center">
+                    <CTA/>
+                </div>
+            </div>
+            <div className="w-full flex justify-center items-center">
+                    <Footer/>
             </div>
         </main>
     )
