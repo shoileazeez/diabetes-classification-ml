@@ -2,7 +2,7 @@ import requests
 import json
 
 # API endpoint
-BASE_URL = "https://stingray-app-rpi8b.ondigitalocean.app/"
+BASE_URL = "https://shark-app-6cums.ondigitalocean.app/"
 
 def test_health_check():
     """Test the health check endpoint"""
