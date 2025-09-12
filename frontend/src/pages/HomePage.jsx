@@ -18,7 +18,6 @@ const HomePage = () => {
                 <p className="text-gray-500 text-xl text-center max-w-2xl mx-auto mb-6">
                     Advanced machine learning technology to assess diabetes risk based on key health indicators
                 </p>
-
                 <div className="flex justify-center gap-7 mb-6">
                     <span className="text-xs font-medium">Machine Learning</span>
                     <span className="text-xs font-medium">Data-Driven</span>
@@ -44,7 +43,7 @@ const HomePage = () => {
                     <CTA/>
                 </div>
             </div>
-            <div className="w-full flex justify-center items-center">
+            <div className="w-full p-4 flex justify-center items-center">
                     <Footer/>
             </div>
         </main>

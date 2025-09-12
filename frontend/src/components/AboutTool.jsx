@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutTool = () => {
   return (
-    <div className="max-w-md mx-auto grid p-6 bg-white shadow-lg rounded-2xl border border-gray-100">
+    <div className="max-w-md mx-auto grid grid-rows-[auto_auto_1fr] p-6 bg-white shadow-lg rounded-2xl border border-gray-100  h-[400px] overflow-y-auto">
       {/* Title */}
       <h2 className="text-xl font-semibold text-gray-900 mb-3">
         About This Tool

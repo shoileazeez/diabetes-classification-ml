@@ -3,7 +3,7 @@ import axios from "axios";
 import {ArrowLeft, Users} from "lucide-react";
 import {Link} from "react-router-dom";
 import AboutTool from "../components/AboutTool";
-
+import Footer from "../components/Footer"
 const Predict = () => {
   const [formData, setFormData] = useState({
     Pregnancies: "",
@@ -65,8 +65,9 @@ const Predict = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="mb-8">
+    <div className="flex-grow">
+      <div className="container mx-auto px-4  py-8">
+        <div className="mb-8">
         <Link to="/" className="text-gray-500 inline-flex items-center gap-2 text-sm hover:text-sm hover:text-black mb-4">
           <ArrowLeft className="h-4 w-4" />
           Back to Home
@@ -251,7 +252,12 @@ const Predict = () => {
           <AboutTool/>
         </div>
       </div>
+      </div>
+      <div className="w-full">
+          <Footer/>
+      </div>
     </div>
+    
   );
 };
 
