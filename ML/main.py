@@ -33,7 +33,7 @@ origins = [
     "http://127.0.0.1:5173",
     "http://localhost:3000",  # CRA dev server (if using create-react-app)
     # Production frontend
-    "https://diabeticspredictor.project.shoileabdulazeez.tech"
+    "https://diabeticspredictor.project.shoileabdulazeez.tech",
     "https://your-frontend-domain.com",
 ]
 
