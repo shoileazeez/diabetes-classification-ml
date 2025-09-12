@@ -76,7 +76,7 @@ const Predict = () => {
           <h1 className="text-3xl font-bold">Diabetes Risk Prediction</h1>
           <Link 
            to="/batch-predict" 
-           className="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-gray-800 shadow-sm 
+           className="flex items-center gap-2 px-4 py-2 rounded-md bg-white text-gray-800 shadow-sm 
              hover:bg-gray-200 hover:shadow-md transition-all duration-200"
           >
             <Users className="h-4 w-4" />
@@ -248,7 +248,7 @@ const Predict = () => {
         </div>
       )}
         </div>
-        <div className="lg:col-span-1 rounded-lg">
+        <div className="lg:col-span-1 rounded-lg lex justify-start lg:justify-center">
           <AboutTool/>
         </div>
       </div>
