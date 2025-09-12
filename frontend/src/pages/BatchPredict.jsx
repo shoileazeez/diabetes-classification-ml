@@ -227,23 +227,26 @@ const BatchPredict = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {[
-                      { name: "Pregnancies", label: "Pregnancies" },
-                      { name: "Glucose", label: "Glucose (mg/dL)" },
-                      { name: "BloodPressure", label: "Blood Pressure (mmHg)" },
-                      { name: "SkinThickness", label: "Skin Thickness (mm)" },
-                      { name: "Insulin", label: "Insulin (μU/mL)" },
-                      { name: "BMI", label: "BMI (kg/m²)" },
-                      { name: "diabetesPedigreeFunction", label: "Diabetes Pedigree Function" },
-                      { name: "Age", label: "Age (years)" },
+                      { name: "Pregnancies", label: "Pregnancies", placeholder: "0–20", hint: "Total number of pregnancies" },
+                      { name: "Glucose", label: "Glucose (mg/dL)", placeholder: "0–300", hint: "Glucose level in mg/dL" },
+                      { name: "BloodPressure", label: "Blood Pressure (mmHg)", placeholder: "0–200", hint: "Blood pressure in mmHg" },
+                      { name: "SkinThickness", label: "Skin Thickness (mm)", placeholder: "0–100", hint: "Skin thickness in mm" },
+                      { name: "Insulin", label: "Insulin (μU/mL)", placeholder: "0–1000", hint: "Insulin level in μU/mL" },
+                      { name: "BMI", label: "BMI (kg/m²)", placeholder: "0–80", hint: "Body Mass Index" },
+                      { name: "diabetesPedigreeFunction", label: "Diabetes Pedigree Function", placeholder: "0–3", hint: "Genetic risk factor" },
+                      { name: "Age", label: "Age (years)", placeholder: "1–120", hint: "Age in years" },
                     ].map((field) => (
                       <div key={field.name}>
                         <label className="block text-sm font-medium text-gray-700">{field.label}</label>
                         <input
                           name={field.name}
                           value={patient[field.name]}
+                          placeholder={field.placeholder}
+                          type="number"
                           onChange={(e) => handleChange(index, e)}
                           className="mt-1 w-full rounded-md border border-gray-200 px-4 py-3 text-sm bg-gray-100 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                         />
+                        <p className="mt-1 text-xs text-gray-500">{field.hint}</p>
                       </div>
                     ))}
                   </div>
