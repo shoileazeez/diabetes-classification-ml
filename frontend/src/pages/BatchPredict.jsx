@@ -244,7 +244,7 @@ const BatchPredict = () => {
                           placeholder={field.placeholder}
                           type="number"
                           onChange={(e) => handleChange(index, e)}
-                          className="mt-1 w-full rounded-md border border-gray-200 px-4 py-3 text-sm bg-gray-100 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                          className="mt-1 w-full rounded-md border border-white-200 px-4 py-3 text-sm bg-white-100 shadow-sm focus:border-black-500"
                         />
                         <p className="mt-1 text-xs text-gray-500">{field.hint}</p>
                       </div>
