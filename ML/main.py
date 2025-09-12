@@ -32,7 +32,9 @@ origins = [
     "http://localhost:5173",  # Vite default React dev server
     "http://127.0.0.1:5173",
     "http://localhost:3000",  # CRA dev server (if using create-react-app)
-    "https://your-frontend-domain.com",  # Production frontend
+    # Production frontend
+    "https://diabeticspredictor.project.shoileabdulazeez.tech"
+    "https://your-frontend-domain.com",
 ]
 
 app.add_middleware(
