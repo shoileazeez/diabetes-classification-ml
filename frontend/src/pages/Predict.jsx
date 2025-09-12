@@ -106,9 +106,12 @@ const Predict = () => {
                 name="Pregnancies"
                 value={formData.Pregnancies}
                 onChange={handleChange}
-                placeholder="Total number of pregnancies"
+                placeholder="0–20"
+                min="0"
+                max="20"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                />
+                <p className="mt-1 text-sm text-gray-600">Total number of pregnancies</p>
               </div>
 
               <div>
@@ -119,9 +122,12 @@ const Predict = () => {
                 name="Glucose"
                 value={formData.Glucose}
                 onChange={handleChange}
-                placeholder="Plasma glucose concentration"
+                placeholder="0–300"
+                min="0"
+                max="300"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                 />
+                <p className="mt-1 text-sm text-gray-600">Glucose level in mg/dL</p>
               </div>
 
               <div>
@@ -132,9 +138,12 @@ const Predict = () => {
                 name="BloodPressure"
                 value={formData.BloodPressure}
                 onChange={handleChange}
-                placeholder="Diastolic blood pressure"
+                placeholder="0–200"
+                min="0"
+                max="200"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
+                <p className="mt-1 text-sm text-gray-600">Blood pressure in mmHg</p>
               </div>
 
              <div>
@@ -145,9 +154,12 @@ const Predict = () => {
               name="SkinThickness"
               value={formData.SkinThickness}
               onChange={handleChange}
-              placeholder="Triceps skin fold thickness"
+              placeholder="0–100"
+              min="0"
+              max="100"
               className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
+               <p className="mt-1 text-sm text-gray-600">Skin thickness in mm</p>
               </div>
               
               <div>
@@ -158,9 +170,12 @@ const Predict = () => {
                 name="Insulin"
                 value={formData.Insulin}
                 onChange={handleChange}
-                placeholder="2-Hour serum insulin"
+                placeholder="0–1000"
+                min="0"
+                max="1000"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                 />
+                <p className="mt-1 text-sm text-gray-600">Insulin level in μU/mL</p>
               </div>
 
               <div>
@@ -171,9 +186,12 @@ const Predict = () => {
                 name="BMI"
                 value={formData.BMI}
                 onChange={handleChange}
-                placeholder="Body mass index"
+                placeholder="0–80"
+                min="0"
+                max="80"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
+                <p className="mt-1 text-sm text-gray-600">Body Mass Index</p>
               </div>
 
               <div>
@@ -184,9 +202,12 @@ const Predict = () => {
                  name="diabetesDedigreeFunction"
                  value={formData.diabetesDedigreeFunction}
                  onChange={handleChange}
-                 placeholder="Diabetes pedigree function score"
+                placeholder="0–3"
+                min="0"
+                max="3"
                  className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
+                <p className="mt-1 text-sm text-gray-600">Genetic risk factor</p>
               </div>
 
               <div>
@@ -197,9 +218,12 @@ const Predict = () => {
                 name="Age"
                 value={formData.Age}
                 onChange={handleChange}
-                placeholder="Age in years"
+                placeholder="1-120"
+                min="1"
+                max="120"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
+                <p className="mt-1 text-sm text-gray-600">Age in years</p>
               </div>
             </div>
           {/* Submit Button */}
