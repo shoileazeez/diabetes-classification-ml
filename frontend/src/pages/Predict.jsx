@@ -124,6 +124,7 @@ const Predict = () => {
                 onChange={handleChange}
                 placeholder="0–300"
                 min="0"
+                step="0.01"
                 max="300"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                 />
@@ -139,6 +140,7 @@ const Predict = () => {
                 value={formData.BloodPressure}
                 onChange={handleChange}
                 placeholder="0–200"
+                step="0.01"
                 min="0"
                 max="200"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
@@ -155,6 +157,7 @@ const Predict = () => {
               value={formData.SkinThickness}
               onChange={handleChange}
               placeholder="0–100"
+              step="0.01"
               min="0"
               max="100"
               className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
@@ -171,6 +174,7 @@ const Predict = () => {
                 value={formData.Insulin}
                 onChange={handleChange}
                 placeholder="0–1000"
+                step="0.01"
                 min="0"
                 max="1000"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
@@ -187,6 +191,7 @@ const Predict = () => {
                 value={formData.BMI}
                 onChange={handleChange}
                 placeholder="0–80"
+                step="0.01"
                 min="0"
                 max="80"
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
@@ -202,9 +207,10 @@ const Predict = () => {
                  name="diabetesDedigreeFunction"
                  value={formData.diabetesDedigreeFunction}
                  onChange={handleChange}
-                placeholder="0–3"
-                min="0"
-                max="3"
+                 placeholder="0–3"
+                 step="0.01"
+                 min="0"
+                 max="3"
                  className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
               />
                 <p className="mt-1 text-sm text-gray-600">Genetic risk factor</p>
