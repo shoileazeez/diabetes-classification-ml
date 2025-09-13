@@ -228,13 +228,13 @@ const BatchPredict = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {[
                       { name: "Pregnancies", label: "Pregnancies", placeholder: "0–20", hint: "Total number of pregnancies", min: 0, max: 20},
-                      { name: "Glucose", label: "Glucose (mg/dL)", placeholder: "0–300", hint: "Glucose level in mg/dL",min: 0, max: 300 },
-                      { name: "BloodPressure", label: "Blood Pressure (mmHg)", placeholder: "0–200", hint: "Blood pressure in mmHg",  min: 0, max: 200 },
-                      { name: "SkinThickness", label: "Skin Thickness (mm)", placeholder: "0–100", hint: "Skin thickness in mm",  min: 0, max: 100 },
-                      { name: "Insulin", label: "Insulin (μU/mL)", placeholder: "0–1000", hint: "Insulin level in μU/mL",  min: 0, max: 1000 },
-                      { name: "BMI", label: "BMI (kg/m²)", placeholder: "0–80", hint: "Body Mass Index",  min: 0, max: 80 },
+                      { name: "Glucose", label: "Glucose (mg/dL)", placeholder: "0–300", hint: "Glucose level in mg/dL",min: 0, max: 300, step: 0.01},
+                      { name: "BloodPressure", label: "Blood Pressure (mmHg)", placeholder: "0–200", hint: "Blood pressure in mmHg",  min: 0, max: 200, step: 0.01},
+                      { name: "SkinThickness", label: "Skin Thickness (mm)", placeholder: "0–100", hint: "Skin thickness in mm",  min: 0, max: 100,step: 0.01},
+                      { name: "Insulin", label: "Insulin (μU/mL)", placeholder: "0–1000", hint: "Insulin level in μU/mL",  min: 0, max: 1000, step: 0.01},
+                      { name: "BMI", label: "BMI (kg/m²)", placeholder: "0–80", hint: "Body Mass Index",  min: 0, max: 80, step: 0.01},
                       { name: "diabetesPedigreeFunction", label: "Diabetes Pedigree Function", placeholder: "0–3", hint: "Genetic risk factor", min: 0, max: 3, step: 0.01},
-                      { name: "Age", label: "Age (years)", placeholder: "1–120", hint: "Age in years",  min: 1, max: 120 },
+                      { name: "Age", label: "Age (years)", placeholder: "1–120", hint: "Age in years",  min: 1, max: 120},
                     ].map((field) => (
                       <div key={field.name}>
                         <label className="block text-sm font-medium text-gray-700">{field.label}</label>
